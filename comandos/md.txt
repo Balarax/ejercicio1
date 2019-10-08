@@ -19,6 +19,3 @@ es lo mismo que:
     mkdir c
     chdir c
     mkdir d
-
-que es lo que hubiese tenido que escribir si las extensiones estuvieran
-deshabilitadas.
