@@ -13,3 +13,5 @@ FIND [/V] [/C] [/N] [/I] [/OFF[LINE]] "cadena" [[unidad:][ruta]archivo[ ...]]
 
 Si no se especifica una ruta, FIND busca el texto que se escriba en el símbolo
 del sistema o que se canalice desde otro comando.
+
+Merge con conflictos
