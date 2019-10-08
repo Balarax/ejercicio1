@@ -1,0 +1,41 @@
+Muestra la lista de subdirectorios y archivos de un directorio.
+
+DIR [drive:][path][filename] [/A[[:]attributes]] [/B] [/C] [/D] [/L] [/N]
+  [/O[[:]sortorder]] [/P] [/Q] [/R] [/S] [/T[[:]timefield]] [/W] [/X] [/4]
+
+  [drive:][path][filename]
+              Especifica la unidad, el directorio o los archivos que se mostrarán.
+
+  /A          Muestra los archivos con los atributos especificados.
+  Atributos    D  Directorios             R  Archivos de solo lectura
+               H  Archivos ocultos        A  Archivos listos para el archivado
+               S  Archivos de sistema     I  Archivos indizados que no son de contenido
+               L  Puntos de reanálisis             O  Archivos sin conexión
+               -  Prefijo de exclusión
+  /B          Usa el formato simple (sin encabezados ni resúmenes).
+  /C          Muestra el separador de miles en los tamaños de los archivos. Es la opción
+              predeterminada. Usa /-C para deshabilitar la aparición del separador.
+  /D          Similar al listado ancho, pero los archivos aparecen en una lista ordenada por columnas.
+  /L          Usa letras minúsculas.
+  /N          Nuevo formato de lista larga donde los nombre de archivo aparecen en el lado derecho.
+  /O          Muestra los archivos según el orden indicado.
+  sortorder        N  Por nombre (orden alfabético)       S  Por tamaño (orden creciente)
+               E  Por extensión (orden alfabético)  D  Por fecha y hora (el más antiguo primero)
+               G  Agrupa primero los directorios -  Prefijo para invertir el orden
+  /P          Hace una pausa después de cada pantalla completa de información.
+  /Q          Muestra el propietario del archivo.
+  /R          Muestra las secuencias alternativas de datos del archivo.
+  /S          Muestra los archivos del directorio especificado y todos sus subdirectorios.
+  /T          Controla el campo de hora que se mostrará o usará para realizar la ordenación.
+  timefield       C  Creación
+              A  Último acceso
+              W  Última modificación
+  /W          Usa el formato de listado ancho.
+  /X          Muestra los nombres cortos generados para los nombres
+              de archivo sin formato 8dot3. El formato es el mismo que para /N, con el nombre corto especificado
+              antes del nombre largo. Si no existe ningún nombre corto, se muestran
+              espacios en blanco en su lugar.
+  /4          Muestra los años con 4 dígitos.
+
+Los modificadores se pueden preestablecer en la variable de entorno DIRCMD.
+Para invalidar los modificadores prestablecidos, se debe agregar un prefijo a cada modificador con - (guión), por ejemplo: /-W.
